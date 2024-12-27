@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+}
+
+.logo-subtext {
+    font-size: 14px;
+    color: #aaa;
+}
+
+#gameWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px; /* Чтобы не перекрывалось хедером */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.Balanse-number {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px; /* Расстояние между балансом и множителем */
+}
+
+input {
+    padding: 10px;
+    margin: 20px 0;
+    width: 80%;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+#multiplierDisplay {
+    font-size: 2em;
+    margin: 20px 0;
+    font-weight: bold;
+}
